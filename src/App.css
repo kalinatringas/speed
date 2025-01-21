@@ -1,0 +1,63 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  background-color: var(--container-color);
+  align-items: first baseline;
+}
+
+.play-button{
+  height: 100px;
+}
+
+.floating-text {
+  display: flex;
+  gap: 5px;
+}
+
+.letter {
+  display: inline-block;
+  animation: waterFall 2s ease-in-out;
+}
+
+.letter.space {
+  width: 0.5em;
+  animation: none; 
+}
+
+@keyframes waterFall{
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(10px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    tranform:translateY(-10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.container-play{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1);
+  margin-top: 5%;
+  text-align: center;
+  background-color: var(--container-color);
+  align-items:end;
+  width: fit-content;
+  border-radius: 15px;
+
+}
+
+.container-play:hover{
+  scale: 1.05;
+}
