@@ -1,0 +1,38 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background-color: #FBF5DD;
+  --container-color:#8D7260;
+  --cadet-gray: #A6CDC6;
+ --indigo: #16404D;
+ --orange:#DDA853;
+
+  background-color: var(--background-color);
+}
+
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+@font-face {
+  font-family: 'Texas-tango';
+  src: url(./assets/TEXAS.otf) format('opentype');
+}
+
+h1 {
+  font-family: Texas-tango;
+  font-size: 3.2em;
+  color:  var(--background-color);
+  line-height: 1.1;
+}

@@ -1,0 +1,71 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  background-color: var(--container-color);
+  align-items: first baseline;
+}
+
+.play-button{
+  height: 200px;
+}
+
+.floating-text {
+  display: flex;
+  gap: 5px;
+}
+
+.letter {
+  display: inline-block;
+  animation: waterFall 2s ease-in-out;
+}
+
+.letter.space {
+  width: 0.5em;
+  animation: none; 
+}
+
+.koala-img{
+  display: flex;
+  float: left;
+  height: 500px;
+  margin-left: 10%;
+}
+
+@keyframes waterFall{
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(10px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    tranform:translateY(-10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.container-play{
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1);
+  margin-top: 15%;
+  text-align: center;
+  align-items :center;
+  width: fit-content;
+  border-radius: 15px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-play:hover{
+  transform: translate(-50%, -50%) scale(1.05);
+
+}
