@@ -11,6 +11,34 @@
   height: 200px;
 }
 
+
+.rs-panel-group{
+  float: right;
+  display: flex;
+  width: 42vw;
+  margin-top: 5%;
+
+}
+
+.rs-panel-title{
+  font-family: Texas-tango !important;
+  font-size: 1.7em;
+  width: 42vw;
+  color: var(--background-color)
+}
+.rs-panel-btn{
+  width: 42vw;
+  background-color: var(--container-color) !important;
+}
+.rs-panel{
+  height: 50vh;
+  overflow: scroll !important;
+}
+.rs-panel-btn:hover{
+  background-color: #3d3027;
+}
+
+
 .floating-text {
   display: flex;
   gap: 5px;
